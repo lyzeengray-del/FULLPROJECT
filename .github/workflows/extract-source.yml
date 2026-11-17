@@ -18,6 +18,7 @@ jobs:
         run: |
           unzip -q LVNG-X-FULL-SOURCE.zip -d /tmp/lvngx
           cp -a /tmp/lvngx/LVNG-X/. .
+          rm -f .github/workflows/android-build.yml
           rm -rf /tmp/lvngx
           rm LVNG-X-FULL-SOURCE.zip
 
